@@ -31,7 +31,7 @@ body {
 	background-color: $brand-color;
 	color: $white;
 	padding: 20px;
-	background-image: url("../images/header-image.jpg");
+	background-image: url("#{$path-images}header-image.jpg");
 	background-position: 50% top;
 	background-repeat: no-repeat;
 	background-size: cover;
