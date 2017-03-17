@@ -1,0 +1,9 @@
+@import "settings";
+
+button,
+[type=button],
+[type=submit],
+[type=reset],
+a.button {
+  @include button;
+}
