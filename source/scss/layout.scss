@@ -14,6 +14,85 @@ body {
 }
 body {
   font-family: $font-family;
+  color: $black;
+  line-height: 1.5;
+}
+
+/* defaults */
+a {
+	color: $link-color;
+  text-decoration: none;
+}
+a:hover {
+	color: $link-color-hover;
+	text-decoration: underline;
+}
+a:visited {
+	color: $link-color-visited;
+}
+a:active {
+	color: $link-color-active;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+//////////////////////////////////////////////
+/// common styles, default font sizes, margins
+//////////////////////////////////////////////
+
+h1 {
+	@include r-font-size(h1);
+	color: $h1-color;
+	margin-bottom: 40px;
+	line-height: $header-line-height;
+}
+h2 {
+	@include r-font-size(h2);
+	color: $h2-color;
+	margin-top: 40px;
+	margin-bottom: 18px;
+	line-height: $header-line-height;
+	@include breakpoint($large) {
+
+	}
+}
+
+h3 {
+	@include r-font-size(h3);
+	color: $black;
+	line-height:$header-line-height;
+	margin-top: 30px;
+	margin-bottom: .75rem;
+}
+
+p {
+	//margin: 0 0 18px 0;
+  margin: 0 0 9px 0;
+}
+ul, ol {
+	margin: 0 0 18px 20px;
+  padding:0;
+}
+ul {
+  list-style-type: square;
+
+  ul {
+    list-style-type: disc;
+    ul {
+      list-style-type: circle;
+    }
+  }
+}
+
+ol,
+ul {
+  li {
+    margin-bottom: .75rem;
+  }
 }
 
 //////////////////////////////////////////////
@@ -429,3 +508,147 @@ body {
 	}
 }
 /*end  _nav */
+
+/* body container */
+.body-container {
+	@include clearfix;
+}
+
+.body-row {
+	padding:30px 40px;
+	@include clearfix;
+
+	&.top-links-row {
+		background-color: $light-brand-color;
+	}
+	@include breakpoint($start-medium) {
+		padding: 90px 100px;
+		&.top-links-row {
+			padding: 40px 100px;
+		}
+	}
+
+	@include breakpoint($large) {
+		padding:100px 0;
+		&.top-links-row {
+			padding: 40px 0;
+		}
+	}
+	&.alternate,
+	&.second {
+			background-color: $light-brand-color;
+	}
+	&.video-carousel-row {
+		padding-right:0;
+		padding-left: 0;
+	}
+}
+
+.main-column {
+	@include breakpoint($large) {
+    margin-left: 100px;
+    width: calc(100% - 300px);
+		padding-right: $pad-r-mq-large;
+	}
+	@include breakpoint($xlarge) {
+		margin: 0 auto;
+		width: 900px;
+		padding-right: 0;
+	}
+
+}
+/* end body container */
+
+/* footer */
+.footer {
+	clear: both;
+	@include clearfix;
+	color: $white;
+	background-color: $brand-color;
+	@include r-font-size(.825rem);
+	line-height: 60px;
+	padding: 0  20px;
+	@include breakpoint($start-medium) {
+		padding:0 40px;
+		line-height: 100px;
+	}
+	@include breakpoint($large) {
+		padding:0 40px;
+	}
+	a {
+		color: $white;
+		text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+	}
+	.utilities {
+		display: none;
+		ul {
+			margin: 0;
+			padding:0;
+		}
+		li {
+			display: inline-block;
+			line-height: 30px;
+			margin-right: .75em;
+      margin-bottom: 0;
+			vertical-align: middle;
+			&:first-child {
+				font-weight: bold;
+			}
+		}
+		@include breakpoint($start-medium) {
+			display: block;
+			float: left;
+		}
+
+	}
+	.social-media  {
+		text-align: center;
+		ul {
+			margin: 0;
+			padding:0;
+		}
+		li {
+			display: inline-block;
+			line-height: 30px;
+      margin-bottom: 0;
+			margin-left: 6px;
+			vertical-align: middle;
+			a {
+        display: block;
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+        text-indent: -9999px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+			}
+      &.fb a {
+        background-image: url("#{$path-icons-white}social/facebook.svg");
+      }
+      &.youtube a {
+        background-image: url("#{$path-icons-white}social/youtube.svg");
+      }
+      &.twitter a {
+        background-image: url("#{$path-icons-white}social/twitter.svg");
+      }
+
+			img {
+				vertical-align: middle;
+				height: 30px;
+				max-height: 30px;
+				max-width: 30px;
+				display: block;
+			}
+		}
+		@include breakpoint($start-medium) {
+			display: block;
+			float: right;
+		}
+	}
+}
+
+/*end _footer */

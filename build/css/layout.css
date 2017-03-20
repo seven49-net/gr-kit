@@ -14,6 +14,81 @@ body {
 
 body {
   font-family: Arial, sans-serif;
+  color: #000;
+  line-height: 1.5;
+}
+
+/* defaults */
+a {
+  color: #0069B4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0069B4;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #0087e7;
+}
+
+a:active {
+  color: #0069B4;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #0069B4;
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 1.25rem;
+  color: #0069B4;
+  margin-top: 40px;
+  margin-bottom: 18px;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: #000;
+  line-height: 1;
+  margin-top: 30px;
+  margin-bottom: .75rem;
+}
+
+p {
+  margin: 0 0 9px 0;
+}
+
+ul, ol {
+  margin: 0 0 18px 20px;
+  padding: 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ul ul {
+  list-style-type: disc;
+}
+
+ul ul ul {
+  list-style-type: circle;
+}
+
+ol li,
+ul li {
+  margin-bottom: .75rem;
 }
 
 /*end _header*/
@@ -478,3 +553,202 @@ body {
 }
 
 /*end  _nav */
+/* body container */
+.body-container {
+  zoom: 1;
+}
+
+.body-container:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.body-row {
+  padding: 30px 40px;
+  zoom: 1;
+}
+
+.body-row:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.body-row.top-links-row {
+  background-color: #E6F0F8;
+}
+
+@media (min-width: 768px) {
+  .body-row {
+    padding: 90px 100px;
+  }
+  .body-row.top-links-row {
+    padding: 40px 100px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .body-row {
+    padding: 100px 0;
+  }
+  .body-row.top-links-row {
+    padding: 40px 0;
+  }
+}
+
+.body-row.alternate, .body-row.second {
+  background-color: #E6F0F8;
+}
+
+.body-row.video-carousel-row {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+@media (min-width: 1025px) {
+  .main-column {
+    margin-left: 100px;
+    width: calc(100% - 300px);
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .main-column {
+    margin: 0 auto;
+    width: 900px;
+    padding-right: 0;
+  }
+}
+
+/* end body container */
+/* footer */
+.footer {
+  clear: both;
+  zoom: 1;
+  color: #fff;
+  background-color: #0069B4;
+  font-size: 0.825rem;
+  line-height: 60px;
+  padding: 0  20px;
+}
+
+.footer:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 0 40px;
+    line-height: 100px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .footer {
+    padding: 0 40px;
+  }
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .utilities {
+  display: none;
+}
+
+.footer .utilities ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer .utilities li {
+  display: inline-block;
+  line-height: 30px;
+  margin-right: .75em;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.footer .utilities li:first-child {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .footer .utilities {
+    display: block;
+    float: left;
+  }
+}
+
+.footer .social-media {
+  text-align: center;
+}
+
+.footer .social-media ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer .social-media li {
+  display: inline-block;
+  line-height: 30px;
+  margin-bottom: 0;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.footer .social-media li a {
+  display: block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer .social-media li.fb a {
+  background-image: url("https://d177g53udii011.cloudfront.net/redesign2016/images/icons-set/weiss/social/facebook.svg");
+}
+
+.footer .social-media li.youtube a {
+  background-image: url("https://d177g53udii011.cloudfront.net/redesign2016/images/icons-set/weiss/social/youtube.svg");
+}
+
+.footer .social-media li.twitter a {
+  background-image: url("https://d177g53udii011.cloudfront.net/redesign2016/images/icons-set/weiss/social/twitter.svg");
+}
+
+.footer .social-media li img {
+  vertical-align: middle;
+  height: 30px;
+  max-height: 30px;
+  max-width: 30px;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .footer .social-media {
+    display: block;
+    float: right;
+  }
+}
+
+/*end _footer */
