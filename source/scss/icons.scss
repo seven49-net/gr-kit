@@ -1,1 +1,85 @@
 @import "settings";
+
+.grch-file-icon {
+  &:before {
+    content: " ";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("#{$path-file}dokumente.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 24px;
+    margin-top: -3px;
+    margin-right: 3px;
+    vertical-align: middle;
+     }
+  &.grch-pdf:before {
+    background-image: url("#{$path-file}pdf.svg");
+  }
+ &.grch-word:before {
+    background-image: url("#{$path-file}word.svg");
+  }
+  &.grch-powerpoint:before {
+    background-image: url("#{$path-file}power-point.svg");
+  }
+
+  &.grch-excel:before{
+    background-image: url("#{$path-file}excel.svg");
+    background-size: 20px;
+  }
+  a.txt .icon {
+    background-image: url("#{$path-file}text.svg");
+  }
+  &.grch-image:before {
+    background-image: url("#{$path-file}image.svg");
+  }
+}
+
+
+.grch-arrow-icon {
+  &:before {
+    content: " ";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url("#{$path-icons-blue}arrows/pfeil-left.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 32px;
+    margin-top: 0;
+    margin-right: 0;
+    vertical-align: middle;
+  }
+  &.grch-large-arrow:before {
+    width: 48px;
+    height: 48px;
+    background-size: 48px;
+  }
+  &.grch-single-arrow-left:before {
+    background-image: url("#{$path-icons-blue}arrows/pfeil-left.svg");
+  }
+  &.grch-single-arrow-right:before {
+    background-image: url("#{$path-icons-blue}arrows/pfeil-right.svg");
+  }
+  &.grch-single-arrow-up:before {
+    background-image: url("#{$path-icons-blue}arrows/pfeil-top.svg");
+  }
+  &.grch-single-arrow-down:before {
+    background-image: url("#{$path-icons-blue}arrows/pfeil-bottom.svg");
+  }
+
+  &.grch-double-arrow-left:before {
+    background-image: url("#{$path-icons-blue}arrows/pfeile-left.svg");
+  }
+  &.grch-double-arrow-right:before {
+    background-image: url("#{$path-icons-blue}arrows/pfeile-right.svg");
+  }
+  &.grch-double-arrow-up:before {
+    background-image: url("#{$path-icons-blue}arrows/pfeile-top.svg");
+  }
+  &.grch-double-arrow-down:before {
+    background-image: url("#{$path-icons-blue}arrows/pfeile-bottom.svg");
+  }
+
+}

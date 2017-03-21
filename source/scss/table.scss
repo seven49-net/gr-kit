@@ -1,1 +1,59 @@
 @import "settings";
+
+table.grch-table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 10px 0;
+  &.grch-responsive-table {
+    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: block;
+    width: 100% ;
+
+    @include breakpoint($start-medium) {
+      display: table;
+    }
+  }
+
+  &.grch-mark-alternate-row {
+    tr:nth-child(odd) td {
+      background: $light-brand-color;
+    }
+  }
+
+  &.grch-hover-tr {
+    tr:hover td {
+      background: $tr-hover-color;
+    }
+  }
+
+  th {
+  	background: $brand-color;
+  	color: $white;
+  	padding: 8px 4px;
+    text-align: left;
+    a, a:hover, a:visited, a:active {
+      color: $white;
+    }
+  }
+  td {
+  	padding: 8px 4px;
+  	background: $white;
+  }
+
+
+  th,td {
+    &.left {
+      text-align: left;
+    }
+    &.center {
+      text-align: center;
+    }
+    &.right {
+      text-align: right;
+    }
+  }
+
+
+}

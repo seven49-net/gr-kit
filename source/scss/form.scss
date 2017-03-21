@@ -1,1 +1,129 @@
 @import "settings";
+
+fieldset {
+  background: $light-brand-color;
+  border: 0 none;
+  padding: 1rem;
+  margin: 0;
+  legend {
+    display: block;
+    margin: 0;
+    padding: 0 0 .75rem;
+    font-size: px2rem(16);
+    font-weight: 700;
+    float: left;
+    line-height: 1;
+    + * {
+      clear: both;
+    }
+
+  }
+}
+
+input[type=file] {
+	color: $label-color;
+}
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=file],
+input[type=number],
+textarea {
+	font-size: 16px;
+	padding: .75rem;
+	width: 100%;
+	max-width: 100%;
+	display: block;
+	border: 0 none;
+	background: $white;
+  font-family: inherit;
+  line-height: normal;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+
+	@include breakpoint($start-medium) {
+		font-size:px2rem(14);
+	}
+}
+
+label {
+  font-size:px2rem(16);
+  margin: 1rem 0 .25rem 0;
+  display: block;
+	@include breakpoint($start-medium) {
+		font-size:px2rem(14);
+	}
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: inline-block;
+  margin: .5rem 0;
+}
+
+input[type=checkbox] + label,
+input[type=radio] + label {
+  display: inline-block;
+  margin: .5rem 0 .5rem .5rem;
+  vertical-align: middle;
+}
+
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+	min-height: 200px;
+}
+textarea[rows="3"] {
+  min-height: 90px;
+}
+textarea[rows="4"] {
+  min-height: 100px;
+}
+textarea[rows="5"] {
+  min-height: 110px;
+}
+textarea[rows="6"] {
+  min-height: 120px;
+}
+textarea[rows="7"] {
+  min-height: 140px;
+}
+textarea[rows="8"] {
+  min-height: 160px;
+}
+textarea[rows="9"] {
+  min-height: 180px;
+}
+
+select {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+
+  //height: 2.4375rem;
+  padding: 0.75rem;
+  //border: 1px solid $white;
+	border: 0 none;
+ // margin: 0 0 1rem;
+  font-size: 16px;
+	@include breakpoint($start-medium) {
+		font-size: px2rem(14);
+	}
+  font-family: inherit;
+  line-height: normal;
+  color: $black;
+  background-color: $white;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+  background-size: 9px 6px;
+  background-position: right -1rem center;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  padding-right: 1.5rem;
+}
