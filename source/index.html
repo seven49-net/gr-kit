@@ -13,7 +13,7 @@
 	<script src="./js/jquery-migrate-3.0.0.min.js"></script>
 	
     <style>
-    /* used by the kit*/
+    /* diese Stildefinitionen sind nicht Teil des Kits und werden lediglich zur "schöneren" Darstellung dieses Dokuments benötigt*/
     i[class^=grch-] {
       font-style: normal;
     }
@@ -190,10 +190,10 @@
 
             <div class="tables">
             <h2>Tabellen</h2>
-            <p><strong>GR Style:</strong> &lt;table  class=&quot;grch-table&quot;&gt;</p>
+            <p><strong>GR Stil:</strong> &lt;table  class=&quot;grch-table&quot;&gt;</p>
 
-            <h3>Responsive Table</h3>
-
+            <h3>&quot;Responsive&quot; Tabellen</h3>
+			<p>Responsive Tabellen sind bei grosser Spalten Anzahl horizontal auf Smartphone scrollbar.</p>
             <p>&lt;table class=&quot;grch-table grch-responsive-table&quot;&gt;</p>
             <table class="grch-table grch-responsive-table">
               <tr>
@@ -267,6 +267,7 @@
 
             </table>
             <h3>Tabelle ohne Klassen</h3>
+			<p>Tabellen ohne Klassen werden nicht per CSS definiert. Im Smartphone Modus werden sie auch nicht horizontal scrollbar</p>
             <table>
               <tr>
                 <th>Header</th>
@@ -305,7 +306,8 @@
 
             </div>
 
-            <h2>Fixed Width Element</h2>
+            <h2>Element mit fixer Breite</h2>
+			<p>Elemente, welche eine fixe Breite benötigen, sollten mit einem Blockelement mit Klasse &quot;grch-fixed-width&quot; umschlossen sein. Damit wird das horizontale Scrollen bei kleinen Bildschirm-Breiten ermöglicht.</p>
             <div class="grch-fixed-width">
               <div class="any-width" style="width: 900px; background-color: #999">
                 <table class="grch-table">
@@ -389,20 +391,19 @@
             <h2>Icons</h2>
             <div class="all-icons">
               <h3>Datei Icons</h3>
+			  <p>Datei Icons werden initialisiert mit der Klasse &quot;grch-file-icon&quot;.</p>
               <ul class="no-grch-list">
-                <li><a href="#" class="grch-file-icon grch-pdf">PDF (grch-file-icon grch-pd)</a></li>
+                <li><a href="#" class="grch-file-icon grch-pdf">PDF (grch-file-icon grch-pdf)</a></li>
                 <li><a href="#" class="grch-file-icon grch-word">Word (grch-file-icon grch-word)</a></li>
                 <li><a href="#" class="grch-file-icon grch-excel">Excel (grch-file-icon grch-excel)</a></li>
                 <li><a href="#" class="grch-file-icon grch-powerpoint">Powerpoint (grch-file-icon grch-powerpoint)</a></li>
                 <li><a href="#" class="grch-file-icon grch-file">Datei (grch-file-icon grch-file)</a></li>
                 <li><a href="#" class="grch-file-icon grch-image">Bild (grch-file-icon grch-image)</a></li>
               </ul>
-              <!-- <h3>Externer Link - Icon </h3>
-              <ul class="no-grch-list">
-                <li><a href="#" class="grch-link-icon grch-external-link">Externe Seite (grch-link-icon grch-external-link)</a></li>
-              </ul> -->
+           
 
               <h3>Pfeil Icons</h3>
+			  <p>Pfeil Icons werden mit der Klasse &quot;grch-arrow-icon&quot; initialisiert.</p>
               <ul class="no-grch-list">
                 <li><i class="grch-arrow-icon grch-single-arrow-left">Pfeil links (grch-arrow-icon grch-single-left)</i></li>
                 <li><i class="grch-arrow-icon grch-single-arrow-right">Pfeil rechts (grch-arrow-icon grch-single-right)</i></li>

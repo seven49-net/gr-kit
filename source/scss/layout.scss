@@ -566,9 +566,10 @@ ul {
 		}
 	}
 	.mobile-language {
-		margin: 0 0 20px 0;
+		margin: 0 0 15px 0;
 		li {
 			display: inline-block;
+			margin-bottom: 5px;
 			em,
 			a {
 				border: 1px solid $white;
@@ -622,6 +623,7 @@ ul {
 }
 
 .main-column {
+	overflow-x: hidden;
 	@include breakpoint($large) {
     margin-left: 100px;
     width: calc(100% - 300px);

@@ -18,6 +18,7 @@ a.button {
   background-origin: content-box;
   -webkit-appearance: none;
   -moz-appearance: none;
+  border-radius: 0;
 }
 
 button:hover,

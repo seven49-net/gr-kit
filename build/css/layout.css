@@ -621,11 +621,12 @@ ul li {
 }
 
 .mobile-navigation .mobile-language {
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
 }
 
 .mobile-navigation .mobile-language li {
   display: inline-block;
+  margin-bottom: 5px;
 }
 
 .mobile-navigation .mobile-language li em,
@@ -697,6 +698,10 @@ ul li {
 .body-row.video-carousel-row {
   padding-right: 0;
   padding-left: 0;
+}
+
+.main-column {
+  overflow-x: hidden;
 }
 
 @media (min-width: 1025px) {
