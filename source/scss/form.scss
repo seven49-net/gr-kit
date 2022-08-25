@@ -127,3 +127,39 @@ select {
   background-repeat: no-repeat;
   padding-right: 1.5rem;
 }
+
+.grch-textbox-with-form-label {
+  margin-top: .75rem;
+  padding: 1rem 0 0 0;
+  position: relative;
+
+  &.required {
+
+    input[type=text],
+    textarea {
+      border-left: .3rem solid $brand-color;
+
+      padding-left: .45rem;
+    }
+  }
+
+  label {
+    position: absolute;
+    font-size: rem(14);
+    line-height: 1;
+    color: $label-color;
+    top: rem(14);
+    left: .75rem;
+    transition: all 200ms ease;
+  }
+
+  &.is-focused,
+  &.is-filled {
+    label {
+      top: rem(3);
+      font-size: rem(10);
+      line-height: 1;
+    }
+
+  }
+}

@@ -95,7 +95,7 @@ ul {
   }
 }
 
-//////////////////////////////////////////////
+/////////////////////////////////////////////
 /// header
 //////////////////////////////////////////////
 
@@ -512,15 +512,17 @@ ul {
 .mobile-menu-toggle {
 	position: absolute;
 	left: 0;
-	bottom: 100px;
+	bottom: 55px;
+  width: 40px;
+  height: 40px;
 	cursor: pointer;
 	@include breakpoint($start-medium) {
-		bottom: 40px;
+		bottom:40px;
 	}
 	@include breakpoint($large) {
 		display: none;
 	}
-	
+
 	&.on {
 		left: calc(100% - 60px);
 	}
@@ -544,7 +546,7 @@ ul {
 			margin: 0;
 			padding: 0;
 		}
-		
+
 		a {
 			color:$white;
 			padding: 8px 10px;

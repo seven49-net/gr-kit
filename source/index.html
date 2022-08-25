@@ -4,14 +4,16 @@
     <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GR Kit</title>
-    <link rel="stylesheet" href="https://d177g53udii011.cloudfront.net/redesign2016/kit/css/layout.css" type="text/css" media="all">
-    <link rel="stylesheet" href="https://d177g53udii011.cloudfront.net/redesign2016/kit/css/buttons.css" type="text/css" media="all">
-    <link rel="stylesheet" href="https://d177g53udii011.cloudfront.net/redesign2016/kit/css/form.css" type="text/css" media="all">
-    <link rel="stylesheet" href="https://d177g53udii011.cloudfront.net/redesign2016/kit/css/icons.css" type="text/css" media="all">
-    <link rel="stylesheet" href="https://d177g53udii011.cloudfront.net/redesign2016/kit/css/table.css" type="text/css" media="all">
-	<script src="https://d177g53udii011.cloudfront.net/redesign2016/kit/js/jquery-3.2.0.min.js"></script>
-	<script src="https://d177g53udii011.cloudfront.net/redesign2016/kit/js/jquery-migrate-3.0.0.min.js"></script>
-	
+
+    <link rel="stylesheet" href="https://cdn.gr.ch/gr/kit/css/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdn.gr.ch/gr/kit/css/buttons.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdn.gr.ch/gr/kit/css/form.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdn.gr.ch/gr/kit/css/icons.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdn.gr.ch/gr/kit/css/table.css" type="text/css" media="all">
+
+  <script src="https://cdn.gr.ch/gr/kit/js/jquery-latest.min.js"></script>
+	<script src="https://cdn.gr.ch/gr/kit/js/jquery-migrate-latest.min.js"></script>
+
     <style>
     /* diese Stildefinitionen sind nicht Teil des Kits und werden lediglich zur "schöneren" Darstellung dieses Dokuments benötigt*/
     i[class^=grch-] {
@@ -25,6 +27,15 @@
     ul.no-grch-list li {
       margin: 0 0 5px 0;
     }
+    .instructions {
+      color: red;
+      padding: 1rem;
+      border: 1px dotted rgb(191, 60, 60);
+    }
+    code {
+      font: 1rem/1.2 courier, monospace;
+      color: rgb(191, 60, 60);
+    }
     </style>
   </head>
   <body>
@@ -33,7 +44,7 @@
       <!--logo -->
       <div class="logo">
         <div class="image">
-          <a href="https://www.gr.ch"><img src="https://d177g53udii011.cloudfront.net/redesign2016/images/logo.svg" alt="www.gr.ch"></a>
+          <a href="https://www.gr.ch"><img src="https://cdn.gr.ch/gr/prod/images/logo.svg" alt="www.gr.ch"></a>
         </div>
         <div class="root-web-descriptions">
           <ul><li lang="de">Kanton Graubünden</li>
@@ -77,12 +88,12 @@
       <div class="search">
         <label for="search">Suche</label>
         <input name="search" type="text" id="search" class="grch-search" placeholder="Suchen" />
-        <input type="image" name="search-button" id="search-button" class="search-button" src="https://d177g53udii011.cloudfront.net/redesign2016/images/icons-set/suche.svg" alt="Suche starten.">
+        <input type="image" name="search-button" id="search-button" class="search-button" src="https://cdn.gr.ch/gr/prod/images/icons-set/suche.svg" alt="Suche starten.">
       </div>
       <!-- end search -->
-	  <span class="mobile-menu-toggle"><img src="https://d177g53udii011.cloudfront.net/redesign2016/images/burger.png" alt="mobile menu toggle"></span>
+	  <span class="mobile-menu-toggle"><img src="https://cdn.gr.ch/gr/prod/images/burger.svg" alt="mobile menu toggle"></span>
 	  <div class="mobile mobile-navigation">
-		  
+
 		  <div class="mobile-menu">
 			  <ul class="mobile-language nav mobile">
 				  <li class="selected"><em>Deutsch</em></li>
@@ -114,6 +125,20 @@
       <div class="body-row">
         <div class="main-column">
           <div class="main-content">
+            <p class="instructions">
+              Der GR Kit benötigt im Head: <br>
+              https://cdn.gr.ch/gr/kit/css/layout.css<br>
+              https://cdn.gr.ch/gr/kit/css/buttons.css<br>
+              https://cdn.gr.ch/gr/kit/css/form.css<br>
+              https://cdn.gr.ch/gr/kit/css/icons.css<br>
+              https://cdn.gr.ch/gr/kit/css/table.css <br>
+              sowie https://cdn.gr.ch/gr/kit/js/jquery-latest.min.js<br><br>
+              Im body am Schluss:<br>
+              https://cdn.gr.ch/gr/kit/js/kit.min.js
+              <br><br>
+              Das Markup mit den entsprechenden Klassen kann dem Quelltext dieser HTML Datei (https://cdn.gr.ch/gr/kit/index.html) entnommen werden.<br>
+
+            </p>
             <h1>GR Kit  (Überschrift h1)</h1>
 
             <h2>Überschrift h2</h2>
@@ -127,6 +152,14 @@
             <p>Paragraph: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div class="form">
               <h2>Formular Elemente</h2>
+              <p class="instructions">Formular Elemente benötigen jquery (https://cdn.gr.ch/gr/kit/js/jquery-latest.min.js), kit.min.js (https://cdn.gr.ch/gr/kit/js/kit.min.js, form.css (https://cdn.gr.ch/gr/kit/css/form.css) und buttons.css (https://cdn.gr.ch/gr/kit/css/buttons.css). input[type=text], input[type=email], input[type=password] und textarea müssen sich zusammen mit dem label in einem Element (zb div) befinden - Beispiel:<br>
+                <code>
+                &lt;div&gt;<br>
+                     &lt;label&gt;Label&lt;/label&gt;<br>
+                      &lt;input type=&quot;text&quot;&gt;<br>
+                  &lt;/div&gt;
+                </code>
+              </p>
               <form class="form grch-form">
                 <fieldset><legend>Fieldset Legend</legend>
                   <div>
@@ -146,7 +179,7 @@
                   </div>
                   <div>
                     <label for="text-input">Label Text Input</label>
-                    <input type="text" name="text-input" id="text-input" placeholder="placeholder text">
+                    <input type="text" name="text-input" id="text-input">
                     </div>
                     <div>
                       <label for="email-input">Label Email Input</label>
@@ -162,7 +195,7 @@
                   </div>
                     <div>
                     <label for="textarea">Label textarea </label>
-                    <textarea name="textarea" id="textarea" placeholder="Placeholder message in textarea"></textarea>
+                    <textarea name="textarea" id="textarea" ></textarea>
                   </div>
 
                 </fieldset>
@@ -400,7 +433,7 @@
                 <li><a href="#" class="grch-file-icon grch-file">Datei (grch-file-icon grch-file)</a></li>
                 <li><a href="#" class="grch-file-icon grch-image">Bild (grch-file-icon grch-image)</a></li>
               </ul>
-           
+
 
               <h3>Pfeil Icons</h3>
 			  <p>Pfeil Icons werden mit der Klasse &quot;grch-arrow-icon&quot; initialisiert.</p>
@@ -454,7 +487,7 @@
         <!-- end social media links -->
     	</div>
 <!-- end footer -->
-<script src="https://d177g53udii011.cloudfront.net/redesign2016/kit/js/kit.min.js"></script>
-		
+
+<script src="https://cdn.gr.ch/gr/kit/js/kit.min.js"></script>
   </body>
 </html>

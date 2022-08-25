@@ -15,7 +15,7 @@
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	border-radius: 0;
-	
+
 	&:hover {
     text-decoration: none;
   }
@@ -41,16 +41,14 @@
 //////////////////////////////////////////////
 
 @mixin clearfix() {
-  zoom: 1;
+
   &:after {
-    content: ".";
-    display: block;
-    height: 0;
+
+    content: "";
+    display: table;
     clear: both;
-    visibility: hidden;
   }
 }
-
 // Hide only visually, but have it available for screenreaders: h5bp.com/v
 @mixin visuallyhidden (){
   border: 0;
